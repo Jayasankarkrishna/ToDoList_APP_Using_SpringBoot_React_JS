@@ -1,0 +1,53 @@
+
+.natural-image img {
+    width: 50%;
+    max-width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .natural-image img:hover {
+    transform: scale(1.05);
+  }
+   
+/* TaskComponent.css */
+
+.image-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-images {
+  display: flex;
+  animation: scrollImages 30s linear infinite; /* Adjust the animation duration */
+}
+
+.scrolling-images img {
+  flex-shrink: 0;
+  width: 600px; /* Set the width of your images */
+  height: 400px; /* Set the height of your images */
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+  
+  /* Styles for animated images */
+  .animated-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Add specific styles for your animated images using classes like 'animate__animated animate__{animationName}' */
+  
